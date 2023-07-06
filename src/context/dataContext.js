@@ -37,7 +37,7 @@ export default function ContextProvider( {children} ) {
             loading,
             input,
             error,
-            setInput
+            setInput,
         }}>
             {children}
         </dataContext.Provider>
