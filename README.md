@@ -1,3 +1,16 @@
+# Weather-React
+
+Tools I used:
+- Tailwind
+- React
+- React Icons
+
+Screenshots
+- ![FireShot Capture 019 - Weather - localhost](https://github.com/Laccazet/Frello-React/assets/43687373/d40f795a-713c-4789-9fcd-10a7517d26f0)
+- ![FireShot Capture 017 - React App - localhost](https://github.com/Laccazet/Frello-React/assets/43687373/ec7eb80f-6e98-4b60-a3ec-b2621d29f685)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

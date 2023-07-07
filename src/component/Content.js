@@ -28,23 +28,23 @@ export default function Content() {
     <div className='w-full h-full'>
 
         {/*SEARCH*/}
-        <div className='w-full h-2/6 flex justify-center items-center gap-3'>
+        <div className='w-full h-1/6 sm:h-2/6 flex justify-center items-center gap-1 sm:gap-3'>
                         
             <div className='w-3/4 h-2/4'>
                 <input onChange={handleChange} onKeyDown={handleKeypress} value={input}
-                className='w-full h-full rounded-lg text-3xl bg-slate-200 p-3'
+                className='w-full h-full rounded-lg  text-xl sm:text-3xl bg-slate-200 p-3'
                 placeholder="Enter city name..."
                 />
                 <p className='text-red-600 text-[13px]'>{error}</p>
             </div>
 
             <button onClick={handleClick} disabled={input.length > 0 ? false : true} 
-            className='rounded-3xl bg-slate-200 w-[50px] h-[50px] flex justify-center items-center'
+            className='rounded-3xl bg-slate-200 w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] flex justify-center items-center'
             ><BiSearchAlt size={35} /></button>
         </div>
 
         {/*STATS*/}
-        <div className='w-full h-4/6 flex flex-row justify-evenly items-center'>
+        <div className='w-full h-5/6 sm:h-4/6 flex flex-col sm:flex-row justify-evenly items-center'>
             <div className='w-4/6 h-full flex flex-col justify-center items-center gap-5'>
                 <h1 className='text-[40px] font-bold leading-none'>{data.name}</h1>                            
                 <div className='w-full flex justify-evenly'>
@@ -67,7 +67,7 @@ export default function Content() {
                 </div>
             </div>
 
-            <div className='w-2/6 h-full flex flex-col justify-center items-center relative'>
+            <div className='sm:w-2/6 w-4/6 h-full flex flex-col justify-center items-center relative'>
                 <img src={icon} alt='icon' className='w-5/6 ' />
                 <h1 className='text-[50px] font-bold relative -top-5'>{Math.floor(data.main?.temp)}°</h1>
             </div>
